@@ -1,0 +1,10 @@
+{
+   "appDescription": {
+      "description": "The description of the application",
+      "message": "Used to copy the element in current page as markdown format."
+   },
+   "appName": {
+      "description": "The name of the application",
+      "message": "Copy As Markdown"
+   }
+}

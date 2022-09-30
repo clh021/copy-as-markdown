@@ -1,0 +1,41 @@
+{
+   "background": {
+      "scripts": [ "scripts/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "images/icon19.png",
+         "38": "images/icon38.png"
+      },
+      "default_title": "__MSG_appName__"
+   },
+   "commands": {
+      "html2markdown": {
+         "description": "Send 'html2markdown' command which is the same with clicking the browser_action icon.",
+         "suggested_key": {
+            "default": "Alt+C",
+            "mac": "Alt+C",
+            "windows": "Alt+C"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "styles/main.css" ],
+      "js": [ "scripts/vendor/reMarked.js", "scripts/contentscript.js", "bower_components/rangy/rangy-core.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAineJJTCu1nrIJroH+alwNUsKSHbJkWPHrceYVSorC0PA3ZqcYd+BMqpqsJvGsXAZBf9urDyaCzB5rNetSj+As2PDocVETyU/B6v1ZS8AlCJeIWI5/VnthJHiOD+VqOdjiUEJzyi9N2kqs5zQLFNjaKWw3W/swdYdtgwIy3VDWOvL5UAyhXoqvQrz1IjB9BzZi7J5a9GfZy7m5MFPeXMOAC5Xa5dM4NY/URH4qp334h9fTWNYRO17pw+2isqbIQrqBzGq7lW72lYFCIntNcjhTExQFgCmiZYZZqPV2lbOjLaqltSLF1L6L4ANK3QrKL9yJqV1uu8UfCOvWMyCJJQP2wIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "permissions": [ "*://*/*", "clipboardWrite", "clipboardRead" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.9"
+}

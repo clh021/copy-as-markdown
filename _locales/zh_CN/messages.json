@@ -1,0 +1,10 @@
+{
+   "appDescription": {
+      "description": "The description of the application",
+      "message": "将你在页面中选中的HTML格式转化为Markdown格式。"
+   },
+   "appName": {
+      "description": "The name of the application",
+      "message": "拷贝为 Markdown"
+   }
+}
